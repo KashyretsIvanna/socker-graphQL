@@ -16,6 +16,7 @@
     "baseUrl": ".",
     "paths": {
       "@app/common": ["libs/common/src/index.ts"],
+      "@app/apps/api": ["apps/api/src/index.ts"],
       "@app/common/swagger": ["libs/common/src/lib/swagger/index.ts"],
       "@app/components/configuration": [
         "libs/components/configuration/src/index.ts"
