@@ -46,10 +46,4 @@ export class FullConfig {
   @Min(3000)
   @Max(9999)
   API_PORT: number;
-
-  @IsString()
-  JWT_ACCESS_SECRET: string;
-
-  @IsString()
-  JWT_REFRESH_SECRET: string;
 }

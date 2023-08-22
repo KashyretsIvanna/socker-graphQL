@@ -8,7 +8,7 @@ import { FullConfig } from './full-config';
     ConfigModule.forRoot({
       isGlobal: true,
       validate: validateConfig(FullConfig),
-      envFilePath: '.development.env',
+      envFilePath: `.${process.env['NODE_ENV']}.env`,
     }),
   ],
 })
