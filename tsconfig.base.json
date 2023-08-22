@@ -15,11 +15,12 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@./common": ["libs/common/src/index.ts"],
-      "@./components/configuration": [
+      "@app/common": ["libs/common/src/index.ts"],
+      "@app/common/swagger": ["libs/common/src/lib/swagger/index.ts"],
+      "@app/components/configuration": [
         "libs/components/configuration/src/index.ts"
       ],
-      "@app/config": [""]
+      "@app/components/shared": ["libs/components/shared/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
