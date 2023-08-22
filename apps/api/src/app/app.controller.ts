@@ -8,6 +8,9 @@ export class AppController {
 
   @Get()
   getData() {
-    return this.appService.getData();
+    console.log('d');
+    const message = this.appService.getData();
+    console.log(message);
+    return message;
   }
 }
