@@ -1,10 +1,10 @@
+import {configureSwagger} from '@app/common/swagger'
+import { FullConfig } from '@app/components/configuration';
 import { Logger, ValidationPipe } from '@nestjs/common';
+import { ConfigService } from '@nestjs/config';
 import { NestFactory } from '@nestjs/core';
 
 import { AppModule } from './app/app.module';
-import { ConfigService } from '@nestjs/config';
-import { FullConfig } from '@app/components/configuration';
-import {configureSwagger} from '@app/common/swagger'
 
 async function bootstrap() {
    

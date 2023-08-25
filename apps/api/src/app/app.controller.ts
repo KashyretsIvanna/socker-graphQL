@@ -11,6 +11,7 @@ export class AppController {
     console.log('d');
     const message = this.appService.getData();
     console.log(message);
+
     return message;
   }
 }

@@ -1,8 +1,8 @@
-import request from 'supertest';
-import { Test } from '@nestjs/testing';
-
-import { INestApplication } from '@nestjs/common';
 import { AppModule, AppService } from '@app/apps/api';
+import { INestApplication } from '@nestjs/common';
+import { Test } from '@nestjs/testing';
+import request from 'supertest';
+
 
 describe('Cats', () => {
   let app: INestApplication;
