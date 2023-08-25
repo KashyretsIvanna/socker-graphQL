@@ -18,7 +18,6 @@ describe('AppService', () => {
 
   describe('getData', () => {
     it('should return "Hello API"', async () => {
-      console.log(process.env.DATABASE_URL);
 
       await prismaService.user.create({
         data: { name: 'd', email: 'iajj@sjdj.com' },

@@ -20,7 +20,6 @@ describe('Cats', () => {
   });
 
   it(`/GET hello`, () => {
-    console.log(process.env.DATABASE_URL)
     
     return request(app.getHttpServer())
       .get('')
