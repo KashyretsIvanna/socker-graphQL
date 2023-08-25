@@ -5,8 +5,7 @@
   "scripts": {
     "prepare": "husky install",
     "pre-commit": "lint-staged",
-    "test": "NODE_ENV=test npx nx run-many --target=test",
-    "test:e2e": " NODE_ENV=test npx nx run api-e2e:e2e --skip-nx-cache",
+    "test": " NODE_ENV=test dotenv -e .test.env -- prisma migrate reset --force && dotenv -e .test.env -- prisma db push &&  npx nx run-many --target=test && npx nx run api-e2e:e2e --skip-nx-cache",
     "lint:fix": "npx eslint --fix .",
     "lint": "npx eslint ."
   },
@@ -21,6 +20,7 @@
     "axios": "^1.4.0",
     "class-transformer": "^0.5.1",
     "class-validator": "^0.14.0",
+    "dotenv-cli": "^7.3.0",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.8.0",
     "supertest": "^6.3.3",
