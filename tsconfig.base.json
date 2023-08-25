@@ -15,9 +15,11 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@app/common": ["libs/common/src/index.ts"],
+      "@app/common/prisma": ["libs/common/src/lib/prisma/src/index.ts"],
       "@app/apps/api": ["apps/api/src/index.ts"],
+      "@app/common": ["libs/common/src/index.ts"],
       "@app/common/swagger": ["libs/common/src/lib/swagger/index.ts"],
+      "@app/common/test": ["libs/common/src/lib/test/src/index.ts"],
       "@app/components/configuration": [
         "libs/components/configuration/src/index.ts"
       ],
