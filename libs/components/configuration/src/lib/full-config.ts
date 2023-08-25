@@ -46,4 +46,7 @@ export class FullConfig {
   @Min(3000)
   @Max(9999)
   API_PORT: number;
+
+  @IsString()
+  DATABASE_URL: string;
 }
