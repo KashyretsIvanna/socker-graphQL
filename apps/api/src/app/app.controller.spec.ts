@@ -1,3 +1,4 @@
+import { PrismaService } from '@app/common/prisma';
 import { Test, TestingModule } from '@nestjs/testing';
 
 import { AppController } from './app.controller';
@@ -9,14 +10,14 @@ describe('AppController', () => {
   beforeAll(async () => {
     app = await Test.createTestingModule({
       controllers: [AppController],
-      providers: [AppService],
+      providers: [AppService, PrismaService],
     }).compile();
   });
 
   describe('getData', () => {
     it('should return "Hello API"', () => {
       const appController = app.get<AppController>(AppController);
-      expect(appController.getData()).toEqual({message: 'Hello API'});
+      expect(appController.getData()).toEqual({ message: 'Hello API' });
     });
   });
 });
